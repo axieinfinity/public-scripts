@@ -3,10 +3,10 @@
 set -e
 
 cd "$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-source "scripts/functions.sh"
 
 if [ ! -x "$(command -v git)" ]; then
-	error "git is not installed."
+	echo "\033[91merror: git is not installed.\033[0m" >&2
+	exit 1
 fi
 
 if [ -e "$HOME/.infranity" ]; then
