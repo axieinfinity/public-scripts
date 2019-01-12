@@ -34,7 +34,7 @@ Installation completed. Please add following lines to your ~/.zshrc or ~/.bashrc
 
   export INFRANITY_DIR="\$HOME/.infranity"
   export PATH="\$INFRANITY_DIR/bin:\$PATH"
-  source "\$INFRANITY_DIR/completions.sh"
+  source "\$INFRANITY_DIR/scripts/completions.sh"
 
 After that, restart your terminal if you want to see the changes immediately.
 Otherwise you can run either ONE of these 2 commands (depending on the shell you are using)
